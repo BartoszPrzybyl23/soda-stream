@@ -255,6 +255,8 @@ a {
   color: var(--bs-link-color);
   text-decoration: underline;
 }
+
+/* Allows Thumbnails to Hover */
 a:hover {
   color: var(--bs-link-hover-color);
 }
@@ -451,14 +453,6 @@ legend + * {
   -webkit-appearance: textfield;
 }
 
-/* rtl:raw:
-[type="tel"],
-[type="url"],
-[type="email"],
-[type="number"] {
-  direction: ltr;
-}
-*/
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -676,8 +670,8 @@ progress {
 
 .carousel-caption {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px); /* This applies the blur effect */
-  background-color: rgba(0, 0, 0, 0.4); /* Optional: Adds semi-transparent background to improve text visibility */
+  backdrop-filter: blur(8px); /* blur effect behind text */
+  background-color: rgba(0, 0, 0, 0.4); /* Adds semi-transparent background */
   border-radius: 10px;
 }
 .row {
@@ -2872,15 +2866,15 @@ textarea.form-control-lg {
   border-radius: 50%;
 }
 
-/* Blob Shape */
+/* Blob Shape
 .shape-blob {
   width: 350px;
   height: 250px;
   border-radius: 50%;
   transform: rotate(30deg);
-}
+} (Now Removed) */
 
-/* Ensure Form is Above Shapes */
+/* Keep Form is Above Shapes */
 .card {
   z-index: 1;
 }
@@ -3807,11 +3801,11 @@ textarea.form-control-lg {
 .video-description {
   background: linear-gradient(135deg, #1e1e1e, #2a2a2a); /* Subtle gradient for depth */
   border: 1px solid #444; /* Border for definition */
-  border-radius: 8px; /* Rounded corners for modern look */
-  padding: 20px; /* Space around the text */
+  border-radius: 8px; /* Rounded corners for more modern look */
+  padding: 20px; 
   color: #f5f5f5; /* Light text for readability */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Soft shadow for a floating effect */
-  font-family: 'Arial', sans-serif; /* Clean and readable font */
+  font-family: 'Arial', sans-serif; 
 }
 
 
